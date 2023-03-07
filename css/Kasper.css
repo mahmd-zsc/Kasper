@@ -541,6 +541,13 @@ header .container nav .menu {
   }
 }
 
+@media (max-width: 500px) {
+  .about img {
+    top: 64px;
+    max-width: 85%;
+  }
+}
+
 /* end ABOUT  */
 /* -------------------------------------------------------------------------------------- */
 /* start counting  */
@@ -654,7 +661,7 @@ header .container nav .menu {
   width: 100%;
 }
 .stats .testimonials .guy .details:hover {
-  border-color:  var(--main-color);
+  border-color: var(--main-color);
   transition: var(--transition);
 }
 .stats .testimonials .details p {
@@ -1014,10 +1021,10 @@ header .container nav .menu {
   display: flex;
   height: 50px;
   width: 60%;
-position: relative;
+  position: relative;
   font-weight: normal;
 }
-.email .container form i{
+.email .container form i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
