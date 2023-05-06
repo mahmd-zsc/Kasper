@@ -29,6 +29,12 @@ html {
   margin: 0 auto;
   padding: 0 15px;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
 /* small */
 @media (min-width: 768px) {
   .container {
@@ -349,20 +355,28 @@ header .container nav .menu {
 /* start designees  */
 .design {
   position: relative;
-  background-image: url(../images/cyber-3400789.jpg);
+  background-image: url(../images/geometric-ge33bb3bbe_1280.jpg);
   background-size: cover;
   color: var(--font-color);
   display: flex;
   align-items: center;
   overflow: hidden;
   padding: 60px 0;
-  box-shadow: 1px 0px 20px 0px #000000;
+}
+.design::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a8;
 }
 
 .design .design-content,
 .design .phones {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   flex: 1;
 }
 
